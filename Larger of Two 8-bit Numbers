@@ -1,10 +1,9 @@
-MVI A, 25H ; Load 25H into A
-MVI B, 35H ; Load 35H into B
-CMP B ; A - B (internally)
-JNC A_GREATER ; Jump if No Carry (A >= B)
+MVI A, 25H  
+MVI B, 35H  
+CMP B 
+JNC A_GREATER 
 ; B is greater
-MOV A, B ; Move B into A
+MOV A, B 
 HLT
 A_GREATER:
-; A is greater
 HLT
