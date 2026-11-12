@@ -1,12 +1,12 @@
-MVI A, 25H ; A = first number
-MVI B, 45H ; B = second number
-MVI C, 35H ; C = third number
-CMP B ; Compare A with B
-JNC CHECK_C ; If A >= B, skip
-MOV A, B ; B is larger, update A
+MVI A, 25H 
+MVI B, 45H 
+MVI C, 35H 
+CMP B 
+JNC CHECK_C 
+MOV A, B 
 CHECK_C:
-CMP C ; Compare A (current max) with C
-JNC DONE ; If A >= C, A is the max
-MOV A, C ; C is larger, update A
+CMP C 
+JNC DONE 
+MOV A, C
 DONE:
-HLT ; A = largest of all three
+HLT
