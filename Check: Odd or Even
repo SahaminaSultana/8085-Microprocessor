@@ -1,0 +1,8 @@
+MVI A, 25H
+ANI 01H
+JZ EVEN
+; Number is Odd
+HLT
+EVEN:
+; Number is Even
+HLT
