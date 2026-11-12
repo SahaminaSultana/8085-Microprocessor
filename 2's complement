@@ -1,0 +1,4 @@
+MVI A, 25H
+CMA
+ADI 01H
+HLT
