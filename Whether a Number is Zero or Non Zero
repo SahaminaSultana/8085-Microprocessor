@@ -1,8 +1,6 @@
-MVI A, 00H ; Load the number to test
-ORA A ; A OR A → sets flags, A unchanged
-JZ ZERO ; Jump if Zero flag = 1
-; Number is non-zero
+MVI A, 00H
+ORA A 
+JZ ZERO 
 HLT
 ZERO:
-; Number is zero
 HLT
